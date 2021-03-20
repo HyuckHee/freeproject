@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "next-redux-wrapper": "^6.0.2",
+    "pokemongo-api": "^1.8.3",
     "vue": "^2.6.12",
     "vue-loader": "^15.9.6",
     "vuex": "^3.6.2"

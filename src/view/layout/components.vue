@@ -1,5 +1,7 @@
 <template>
-  <div><transition name="fade" mode="out-in"><reduceTest>></reduceTest></transition>
+  <div>
+    <transition name="fade" mode="out-in"><reduceTest>></reduceTest></transition>
+    <transition name="fade" mode="out-in"><pokemonGo>></pokemonGo></transition>
 
   </div>
 </template>
@@ -19,7 +21,8 @@ name: "components",
     }
   },
   components : {
-    reduceTest : () => import('@/view/components/reduce/reduceTest')
+    reduceTest : () => import('@/view/components/reduce/reduceTest'),
+    pokemonGo : () => import('@/view/components/pokemonGo/pokemonGo')
   },
   created:function(){
   },

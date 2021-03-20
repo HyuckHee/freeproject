@@ -1,0 +1,429 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*메뉴설정*/
+.menuset .frmwrap{margin-top:20px; padding:0 0 20px 150px; border-bottom:1px solid #e6e5ea;}
+.menuset .frmwrap > label, .menuset .frmwrap > legend{padding:5px 12px; max-width:150px; font-size:13px;}
+.menuset .frmwrap > input[type="text"], .menuset .frmwrap > input[type="password"], .menuset .frmwrap > input[type="number"], .menuset .frmwrap select{width:120px;}
+.menuset .frmwrap .descp{margin-top:6px; font-size:inherit; color:inherit;} .menuset .frmwrap em{margin:0 2px; color:#666;}
+
+/*개인정보*/
+.userinfo .line{padding-top:15px; padding-bottom:15px;} .userinfo .line:after{display:block; clear:both; content:'';} .userinfo .line:nth-child(2n + 1){background-color:#f8f8fa;}
+.line .frmwrap{float:left;} .userinfo .frmwrap{padding-left:115px;} .line .frmwrap +  .frmwrap{margin:0 0 0 105px;}
+.userinfo .frmwrap > label, .userinfo .frmwrap > legend{padding:5px 10px 5px 12px; max-width:115px;} .line.frmwrap > label, .line.frmwrap > legend{top:15px;}
+.userinfo .frmwrap > input[type="text"], .userinfo .frmwrap > input[type="password"], .userinfo .frmwrap > input[type="number"], .userinfo .frmwrap select{width:192px;}
+.userinfo .line:nth-child(2n + 1) .rdchwrap{background-color:#ececf2;} .userinfo label.require:after{margin-left:2px;} .userinfo .frmwrap .descp{margin-top:8px; line-height:1.4em;}
+
+/*로그인 페이지*/
+#wrap.login{min-width:1100px;} .login{padding-top:calc(50vh - 355px); background-color:#f6f5f7; background-image:url(../img/login/bg_01.png), url(../img/login/bg_02.png), url(../img/login/bg_03.png); background-repeat:no-repeat; background-position:left 25%, 77% top, right bottom; box-sizing:border-box;}
+.login section{position:relative; margin:0 auto; width:1075px; height:710px; background:#fff url(../img/login/login_img.png) no-repeat 0 0; box-shadow:6px 6px 50px rgba(0,0,0,.15);}
+.login h1{position:absolute; top:60px; left:60px; width:100px; height:60px; background:url(../img/login/logo.png) no-repeat 0 0; overflow:hidden; text-indent:-999px;}
+.login .tit{float:left; margin-top:460px; width:315px; padding:55px 40px 55px 58px; color:#fff; letter-spacing:-1px;}
+.login h2{font-size:3em; line-height:1.2em;} .login h2 em{font-weight:400;} .login .tit p{margin-top:10px; font-size:3.25em; font-weight:100; opacity:.2;}
+.login fieldset{float:right; margin:0; width:440px; padding:120px 110px 70px; background-color:#fff;}
+.login legend{float:left; margin:0 0 40px; width:100%; text-align:center; font-size:3.33em; color:#333; font-weight:300;}
+.login legend:before{display:block; margin:0 auto 10px; width:100px; height:90px; background:url(../img/login/login_ico.png) no-repeat center 0; content:"";}
+.login [type="text"], .login [type="password"]{display:block; margin-top:10px; width:100%; height:44px; padding-left:20px; background-color:#f5f6f9; border-color:#d6d6db; border-radius:0;}
+.login .btn{display:block; margin-top:50px; width:100%; height:60px; line-height:57px; background-color:#0b60ca; border-color:#0b60ca; border-radius:30px; font-size:1.7em; color:#ffe346; font-weight:600;} .login .error + .btn{margin-top:25px;}
+.login .idsave{margin:30px -10px 0; padding-top:23px; border-top:1px solid #d6d6db; text-align:right; font-size:1.1em; color:#888;} .login .idsave [type="checkbox"]{margin:0 0 0 10px;}
+.login .error{margin-top:5px; padding-left:17px; line-height:20px; background:url(../img/login/err_bullet.png) no-repeat left 4px; color:#de2037;}
+
+/*탭*/
+.line_top{line-height:40px; background-color:#2c313c} .line_top:after{display:block; clear:both; content:"";} .line_top nav{float:right;}
+.line_top nav a{float:left; width:80px; border-left:3px solid #20242f; text-align:center; font-size:1em;} .line_top nav a.active{color:#fd521d;}
+/*라인가동현황*/
+.line_status{position:relative; padding:20px 30px 1px; background-color:#272d3b; border-top:1px solid #3b404e;} .line_status h3{margin-bottom:17px; font-size:1.2em; line-height:1.8em; font-weight:400;}
+.line_status .btn.more{position:absolute; right:30px; top:21px; height:28px; line-height:26px; background-color:#93969d; border-color:#93969d; border-radius:0; font-size:1em; color:#20242f; font-weight:500;}
+.line_status article{position:relative; margin-bottom:30px; padding-left:135px;}
+.line_status .flwrap article{float:left; width:calc(50% - 24px); box-sizing:border-box;} .line_status .flwrap article:nth-of-type(even){margin-left:48px;}
+.line_status h4{position:absolute; left:0; top:0; line-height:14px; font-size:1.2em; color:#b1b2b7; font-weight:500;}
+.line_status h4 strong{margin-left:9px; font-size:0.83em; color:#4c5059; font-weight:400;} .line_status h4 .on{color:#feb245;}
+.line_status .bar{position:relative; height:14px; background-color:#383e4b; overflow:hidden;} .line_status .bar span{position:absolute; top:0; bottom:0; left:0;}
+.line_status .bar .run{background-color:#22cd5a;} .line_status .bar .alarm{background-color:#feb245;} .line_status .bar .stop{background-color:#93969d;}
+
+/*생산량*/
+.flowinfo:after{display:block; clear:both; content:"";}
+.flowinfo li{float:left; position:relative; margin-bottom:15px; width:calc(10% - 36px); background-color:#272d3b; border-top:1px solid #3b404e;} .flowinfo li + li{margin-left:40px;}
+.flowinfo li + li:before{position:absolute; left:-40px; top:55px; width:40px; height:40px; background:url(../img/flow_arrow.png) no-repeat center center; content:"";}
+.flowinfo li + li:nth-child(10n + 1){margin-left:0;} .flowinfo li + li:nth-child(10n + 1):before{content:none;}
+.flowinfo li > a{display:block; line-height:30px; background-color:#93969d; text-align:center; font-size:1.06em; color:#20242f; font-weight:500;}
+.flowinfo h3{margin-top:14px; line-height:20px; font-size:1.2em; font-weight:500;} .flowinfo h3:before{display:inline-block; margin-right:10px; width:3px; height:20px; content:""; vertical-align:top;}
+.flowinfo .run h3:before{background-color:#22cd5a;} .flowinfo .stop h3:before{background-color:#93969d;} .flowinfo .alarm h3:before{background-color:#feb245;}
+.flowinfo h3 .set{float:right; margin-right:10px; width:20px; height:20px; background:url(../img/flow_set.png) no-repeat center 1px; overflow:hidden; text-indent:-999px;}
+.flowinfo dl{padding:5px 13px 6px;} .flowinfo dt{color:#b1b2b7; font-weight:300;}  .flowinfo dt strong{float:right; color:#fff; font-weight:500;}
+.flowinfo dd{font-size:1.33em; font-weight:500;} .flowinfo dd em{color:#fd1d32;} .flowinfo dd strong{font-size:1.75em;}
+/*라인이미지*/
+.linewrap{position:relative; padding:20px 30px; background-image:linear-gradient(-15deg, #252936ff 60%, #25293600 60%);}
+.linewrap h2{position:absolute; right:30px; bottom:60px; font-size:2.33em; font-weight:300;}
+.linewrap .legend{position:absolute; right:30px; bottom:25px; font-size:0.93em; color:#93969d; font-weight:500;} .linewrap .legend li{float:left; margin-left:12px;}
+.linewrap .legend li:before{display:inline-block; margin-right:5px; width:10px; height:10px; background-color:#93969d; border-radius:50%; content:"";}
+.linewrap .legend li.run:before{background-color:#22cd5a;} .linewrap .legend li.alarm:before{background-color:#feb245;}
+.linewrap img{display:block;}
+/*설비메뉴*/
+.linewrap .facility .menu{position:absolute; display:none; min-width:150px; background-color:#fff; border-radius:3px; box-shadow:5px 5px 5px rgba(0,0,0,.15);}
+.linewrap .facility li.active .menu{display:block; z-index:2;}
+.linewrap .facility .menu li{line-height:30px; padding:0 11px; text-align:left; color:#2e333f; font-size:13px;} .linewrap .facility .menu li:hover{background-color:#e2e9fa;}
+.linewrap .facility .menu li:first-child{border-radius:3px 3px 0 0;} .linewrap .facility .menu li:last-child{border-radius:0 0 3px 3px;}
+.linewrap .facility .menu li > a{display:block; padding-right:10px; background:url(../img/arrow_bg.png) no-repeat right center;}
+/*수치정보*/
+.linewrap [class^="value"]{position:absolute;}.linewrap [class^="value"] div{float:left;}  .linewrap [class^="value"] div + div{margin-left:4px;}
+.linewrap [class^="value"] dl{padding:0 9px; min-width:145px; height:32px; box-sizing:border-box; background-color:#383e4b; border-radius:3px; box-shadow:3px 3px 5px rgba(0,0,0,.2); text-align:left; font-size:14px;} .linewrap [class^="value"] dl + dl{margin-top:4px;}
+.linewrap [class^="value"] dt{float:left; margin-top:9px; padding-right:7px; line-height:16px; border-right:1px solid rgba(255,255,255,.2); color:#e5e5eb; font-weight:300;}
+.linewrap [class^="value"] dd{float:right; padding-left:5px; line-height:32px; color:#fff; font-weight:400;} .linewrap [class^="value"] strong{display:inline-block; margin-right:7px; font-size:19px; vertical-align:-1px;}
+/*수치정보 - 표시선*/
+.pointer li{position:absolute;} .pointer span{position:absolute; display:block; background-color:#3b404e;} .pointer .horizon{height:1px;} .pointer .vertical{width:1px;}
+.pointer .circle{width:5px; height:5px; border-radius:50%;}
+/*알람 - siren, warning*/
+
+.facility .warning, .facility .siren{position:absolute; text-align:left; text-indent:-999px; overflow:hidden;}
+.facility .alarminfo{position:absolute; min-width:130px; min-height:46px; padding:7px 10px; line-height:16px; box-sizing:border-box; background-color:#fff; border-radius:3px; box-shadow:5px 5px 5px rgba(0,0,0,.1); text-align:left; font-size:12px; color:#666; white-space:nowrap;}
+.facility .alarminfo:before{position:absolute; bottom:-8px; left:-3px; border-style:solid; border-width:8px; border-color:transparent #fff transparent transparent; content:'';}
+.facility .alarminfo p{color:#2e333f; font-weight:500;}
+/*제품생산정보*/
+.linewrap .lineinfo{position:absolute; top:20px; left:20px;} .linewrap .lineinfo:after{display:block; clear:both; content:"";} .linewrap .lineinfo dl{float:left; margin-right:3px;}
+.linewrap .lineinfo dt, .linewrap .lineinfo dd{padding:0 12px; line-height:2em; background-color:#272d3b; border-top:1px solid #3b404e; text-align:center; white-space:nowrap;}
+.linewrap .lineinfo dt{border-top-left-radius:2px; border-top-right-radius:2px; color:#93969d;}
+.linewrap .lineinfo dd{margin-top:3px; border-bottom-left-radius:2px; border-bottom-right-radius:2px; font-size:1.35em;}
+/*설비명칭*/
+.linewrap .facility .name{position:absolute; font-size:1.1em; color:#808186; white-space:nowrap; transform:skewY(-15deg);}
+/*라인설비*/
+.linewrap .facility > li{position:absolute; background-repeat:no-repeat; cursor:pointer;} .linewrap .facility > li:before{position:absolute; top:0; bottom:0; left:0; right:0; content:'';}
+/*병라인*/
+.linewrap.bottle{background-image:linear-gradient(-14deg, #252936ff 64%, #25293600 64%);}
+.linewrap.pouch{background-image:linear-gradient(-13deg, #252936ff 60%, #25293600 60%);}
+.linewrap .facility .bottle_01{left:201px; bottom:220px; width:197px; height:210px; background-position:left bottom;}
+.linewrap .facility .bottle_02{left:360px; bottom:279px; width:213px; height:175px; background-position:-1px bottom;}
+.linewrap .facility .bottle_03{left:612px; bottom:380px; width:126px; height:96px; background-position:0 24px;}
+.linewrap .facility .bottle_04{left:749px; bottom:445px; width:109px; height:202px; background-position:29px 61px;}
+.linewrap .facility .bottle_05{left:872px; bottom:441px; width:193px; height:157px; background-position:0 0;}
+.linewrap .facility .bottle_06{left:1002px; bottom:548px; width:44px; height:93px; background-position:-1px 32px;}
+.linewrap .facility .bottle_07{left:1069px; bottom:487px; width:87px; height:90px; background-position:8px 0;}
+.linewrap .facility .bottle_08{left:1226px; bottom:525px; width:495px; height:240px; background-position:0 0;}
+.linewrap .facility .bottle_08_01{left:1389px; bottom:525px; width:332px; height:170px; background-position:0 1px;}
+.linewrap .facility .bottle_08_02{left:1307px; bottom:576px; width:334px; height:154px; background-position:1px 1px;}
+.linewrap .facility .bottle_08_03{left:1226px; bottom:612px; width:335px; height:153px; background-position:0 0;}
+.linewrap .facility .bottle_09{left:1381px; bottom:426px; width:76px; height:90px; background-position:9px 0;}
+.linewrap .facility .bottle_10{left:1238px; bottom:312px; width:139px; height:166px; background-position:0 0;}
+.linewrap .facility .bottle_11{left:1137px; bottom:281px; width:88px; height:91px; background-position:13px 0;}
+.linewrap .facility .bottle_12{left:959px; bottom:237px; width:149px; height:109px; background-position:0 5px;}
+.linewrap .facility .bottle_13{left:847px; bottom:213px; width:113px; height:85px; background-position:30px 3px;}
+.linewrap .facility .bottle_14{left:569px; bottom:150px; width:219px; height:112px; background-position:0 0;}
+.linewrap .facility .bottle_15{left:516px; bottom:128px; width:26px; height:76px; background-position:4px 7px;}
+.linewrap .facility .bottle_16{left:306px; bottom:75px; width:180px; height:98px; background-position:4px 0;}
+.linewrap .facility .bottle_17{left:202px; bottom:46px; width:93px; height:119px; background-position:9px 0;}
+/*run, alram BG*/
+.linewrap .facility .sterilize:after{content:"Cooling";} .linewrap .facility .waiting:after{content:"Drain";} .linewrap .facility .heat:after{content:"Heating";} .linewrap .facility .bottle_08_01.run:after{content:"Come UP";} .linewrap .facility .bottle_08_02.run:after{content:"Come UP";} .linewrap .facility .bottle_08_03.run:after{content:"Come UP";} .linewrap .facility .holding:after{content:"Holding";} .linewrap .facility .bottle_08_01.stop:after{content:"waiting";} .linewrap .facility .bottle_08_02.stop:after{content:"waiting";} .linewrap .facility .bottle_08_03.stop:after{content:"waiting";}
+/*병라인 라인 gif*/
+/*파우치라인*/
+.linewrap .facility .pouch_01{left:128px; bottom:147px; width:107px; height:199px; background-position:right 60px;}
+.linewrap .facility .pouch_02{left:266px; bottom:137px; width:210px; height:189px; background-position:0 23px;}
+.linewrap .facility .pouch_03_01{left:443px; bottom:187px; width:479px; height:233px; background-position:0 0;}
+.linewrap .facility .pouch_03_0101{left:599px; bottom:187px; width:324px; height:166px; background-position:0 0;}
+.linewrap .facility .pouch_03_0102{left:522px; bottom:236px; width:324px; height:150px; background-position:0 0;}
+.linewrap .facility .pouch_03_0103{left:444px; bottom:270px; width:324px; height:150px; background-position:-1px 0;}
+.linewrap .facility .pouch_03_02{left:366px; bottom:152px; width:636px; height:301px; background-position:0 0;}
+.linewrap .facility .pouch_04{left:1044px; bottom:331px; width:211px; height:144px; background-position:1px 11px;}
+.linewrap .facility .pouch_05{left:1301px; bottom:408px; width:27px; height:68px; background-position:0 10px;}
+.linewrap .facility .pouch_06{left:1388px; bottom:432px; width:220px; height:118px; background-position:0 7px;}
+.linewrap .facility .pouch_07{left:1620px; bottom:487px; width:173px; height:173px; background-position:0 7px;}
+/*run, alram BG*/
+
+/*파우치라인 라인 gif*/
+
+/*팩라인 TN1*/
+.linewrap .facility .tn1_01{left:98px; bottom:47px; width:440px; height:403px; background-position:82px 1px;}
+.linewrap .facility .tn1_02{left:592px; bottom:165px; width:229px; height:163px; background-position:0 0;}
+.linewrap .facility .tn1_03{left:849px; bottom:243px; width:108px; height:98px; background-position:16px 2px;}
+.linewrap .facility .tn1_04{left:1072px; bottom:304px; width:217px; height:130px; background-position:2px 0;}
+.linewrap .facility .tn1_05{left:918px; bottom:363px; width:206px; height:146px; background-position:30px 0;}
+.linewrap .facility .tn1_06{left:1312px; bottom:383px; width:62px; height:85px; background-position:0 7px;}
+.linewrap .facility .tn1_07{left:1458px; bottom:416px; width:23px; height:64px; background-position:1px 9px;}
+.linewrap .facility .tn1_08{left:1492px; bottom:424px; width:277px; height:132px; background-position:0 7px;}
+.linewrap .facility .tn1_09{left:1737px; bottom:492px; width:86px; height:107px; background-position:0 0;}
+/*팩라인 TN1 라인 gif*/
+
+/*팩라인 TN2*/
+.linewrap .facility .tn2_01{left:114px; bottom:70px; width:431px; height:394px; background-position:80px 0;}
+.linewrap .facility .tn2_02{left:596px; bottom:180px; width:224px; height:159px; background-position:0 0;}
+.linewrap .facility .tn2_03{left:847px; bottom:256px; width:105px; height:96px; background-position:16px 1px;}
+.linewrap .facility .tn2_04{left:1111px; bottom:313px; width:263px; height:137px; background-position:72px 0;}
+.linewrap .facility .tn2_05{left:914px; bottom:369px; width:209px; height:148px; background-position:36px 0;}
+.linewrap .facility .tn2_06{left:1177px; bottom:462px; width:23px; height:63px; background-position:0 8px;}
+.linewrap .facility .tn2_07{left:1490px; bottom:410px; width:257px; height:115px; background-position:35px 9px;}
+.linewrap .facility .tn2_08{left:1722px; bottom:472px; width:84px; height:105px; background-position:0 0;}
+/*run, alram BG*/
+/*팩라인 TN2 라인 gif*/
+
+/*팩라인 TN3*/
+.linewrap .facility .tn3_01{left:109px; bottom:62px; width:397px; height:364px; background-position:74px 0;}
+.linewrap .facility .tn3_02{left:559px; bottom:168px; width:221px; height:158px; background-position:0 0;}
+.linewrap .facility .tn3_03{left:808px; bottom:244px; width:104px; height:95px; background-position:15px 2px;}
+.linewrap .facility .tn3_04{left:1048px; bottom:307px; width:209px; height:127px; background-position:0 0;}
+.linewrap .facility .tn3_05{left:897px; bottom:399px; width:261px; height:135px; background-position:72px 0;}
+.linewrap .facility .tn3_06{left:1294px; bottom:372px; width:61px; height:83px; background-position:0 7px;}
+.linewrap .facility .tn3_07{left:1447px; bottom:407px; width:22px; height:62px; background-position:0 8px;}
+.linewrap .facility .tn3_08{left:1493px; bottom:418px; width:267px; height:128px; background-position:0 5px;}
+.linewrap .facility .tn3_09{left:1729px; bottom:484px; width:83px; height:103px; background-position:0 0;}
+/*run, alram BG*/
+/*팩라인 TN3 라인 gif*/
+/*팩라인 TN5*/
+.linewrap .facility .tn5_01{left:104px; bottom:53px; width:388px; height:356px; background-position:72px 0;}
+.linewrap .facility .tn5_02{left:546px; bottom:157px; width:217px; height:155px; background-position:0 0;}
+.linewrap .facility .tn5_03{left:790px; bottom:231px; width:102px; height:93px; background-position:13px 2px;}
+.linewrap .facility .tn5_04{left:989px; bottom:271px; width:255px; height:134px; background-position:70px 0;}
+.linewrap .facility .tn5_05{left:962px; bottom:372px; width:197px; height:139px; background-position:35px 0;}
+.linewrap .facility .tn5_06{left:1203px; bottom:454px; width:22px; height:61px; background-position:0 8px;}
+.linewrap .facility .tn5_07{left:1332px; bottom:360px; width:185px; height:109px; background-position:32px 11px;}
+.linewrap .facility .tn5_08{left:1265px; bottom:469px; width:228px; height:125px; background-position:0 7px;}
+.linewrap .facility .tn5_09{left:1551px; bottom:412px; width:22px; height:61px; background-position:0 8px;}
+.linewrap .facility .tn5_10{left:1735px; bottom:464px; width:81px; height:102px; background-position:0 0;}
+/*run, alram BG*/
+/*팩라인 TN5 라인 gif*/
+
+/*팩라인 TN6*/
+.linewrap .facility .tn6_01{left:124px; bottom:50px; width:447px; height:410px; background-position:83px 0;}
+.linewrap .facility .tn6_02{left:634px; bottom:171px; width:250px; height:177px; background-position:0 0;}
+.linewrap .facility .tn6_03{left:915px; bottom:256px; width:117px; height:107px; background-position:17px 2px;}
+.linewrap .facility .tn6_04{left:1090px; bottom:295px; width:225px; height:160px; background-position:39px 0;}
+.linewrap .facility .tn6_05{left:1358px; bottom:387px; width:25px; height:71px; background-position:0 10px;}
+.linewrap .facility .tn6_06{left:1435px; bottom:397px; width:301px; height:145px; background-position:0 8px;}
+.linewrap .facility .tn6_07{left:1703px; bottom:481px; width:94px; height:117px; background-position:0 0;}
+/*run, alram BG*/
+
+/*팩라인 TN6 라인 gif*/
+
+.all_slide{width:100vw; overflow:hidden;} .all_slide >  div{width:500vw; animation:all_slide 100s infinite;} .all_slide .linewrap{float:left; width:100vw; box-sizing:border-box;}
+@keyframes all_slide{
+  0%   {transform:translateX(0);}
+  19%   {transform:translateX(0);}
+  20% {transform:translateX(-100vw);}
+  39% {transform:translateX(-100vw);}
+  40% {transform:translateX(-200vw);}
+  59% {transform:translateX(-200vw);}
+  60% {transform:translateX(-300vw);}
+  79% {transform:translateX(-300vw);}
+  80% {transform:translateX(-400vw);}
+  99% {transform:translateX(-400vw);}
+}
+
+.all_pack:after{display:block; clear:both; content:"";} .all_pack{width:1920px;}
+.all_pack > div{float:left; width:33.33vw; border-right:1px solid #3b404e; box-sizing:border-box; overflow:hidden;}
+.all_pack .linewrap h2{right:20px; bottom:40px; font-size:1.5em;} .all_pack .linewrap .legend{right:20px; bottom:15px; font-size:0.9em;}
+.all_pack .linewrap{padding:107px 5px 20px;} .all_pack .linewrap.pouch{padding:79px 5px 10px;} .all_pack .linewrap img{max-width:100%;}
+.all_pack .linewrap .facility .name{font-size:0.7em;}
+/*팩라인 TN1*/
+.all_pack .linewrap .facility .tn1_01{left:28px; bottom:29px; width:151px; height:138px; background-position:28px 0; background-size:109px auto;}
+.all_pack .linewrap .facility .tn1_02{left:197px; bottom:69px; width:79px; height:57px; background-position:0 0; background-size:75px auto;}
+.all_pack .linewrap .facility .tn1_03{left:285px; bottom:96px; width:37px; height:34px; background-position:5px 0; background-size:26px auto;}
+.all_pack .linewrap .facility .tn1_04{left:361px; bottom:117px; width:75px; height:45px; background-position:1px 1px; background-size:73px auto;}
+.all_pack .linewrap .facility .tn1_05{left:308px; bottom:137px; width:72px; height:51px; background-position:11px 1px; background-size:60px auto;}
+.all_pack .linewrap .facility .tn1_06{left:443px; bottom:144px; width:21px; height:29px; background-position:0 2px; background-size:21px auto;}
+.all_pack .linewrap .facility .tn1_07{left:493px; bottom:156px; width:8px; height:22px; background-position:0 4px; background-size:5px auto;}
+.all_pack .linewrap .facility .tn1_08{left:505px; bottom:158px; width:96px; height:46px; background-position:0 3px; background-size:81px auto;}
+.all_pack .linewrap .facility .tn1_09{left:588px; bottom:181px; width:30px; height:37px; background-position:0 0; background-size:27px auto;}
+.all_pack .linewrap .facility .tn1_01:hover:before{background-size:151px auto;}
+.all_pack .linewrap .facility .tn1_02:hover:before{background-size:79px auto;}
+.all_pack .linewrap .facility .tn1_03:hover:before{background-size:37px auto;}
+.all_pack .linewrap .facility .tn1_04:hover:before{background-size:75px auto;}
+.all_pack .linewrap .facility .tn1_05:hover:before{background-size:72px auto;}
+.all_pack .linewrap .facility .tn1_06:hover:before{background-size:21px auto;}
+.all_pack .linewrap .facility .tn1_07:hover:before{background-size:8px auto;}
+.all_pack .linewrap .facility .tn1_08:hover:before{background-size:96px auto;}
+.all_pack .linewrap .facility .tn1_09:hover:before{background-size:30px auto;}
+/*라인 gif*/
+.all_pack .linewrap .facility .tn1_line01{left:176px; bottom:78px; width:27px; height:11px; background-size:27px auto;}
+.all_pack .linewrap .facility .tn1_line02{left:276px; bottom:100px; width:16px; height:7px; background-size:16px auto;}
+.all_pack .linewrap .facility .tn1_line03_01{left:319px; bottom:110px; width:33px; height:11px; background-size:33px auto;}
+.all_pack .linewrap .facility .tn1_line03_02{left:349px; bottom:117px; width:31px; height:10px; background-size:31px auto;}
+.all_pack .linewrap .facility .tn1_line04{left:415px; bottom:146px; width:32px; height:10px; background-size:32px auto;}
+.all_pack .linewrap .facility .tn1_line05_01{left:465px; bottom:158px; width:22px; height:6px; background-size:22px auto;}
+.all_pack .linewrap .facility .tn1_line05_02{left:478px; bottom:163px; width:33px; height:7px; background-size:33px auto;}
+.all_pack .linewrap .facility .tn1_line06{left:508px; bottom:171px; width:37px; height:12px; background-size:37px auto;}
+.all_pack .linewrap .facility .tn1_line07{left:582px; bottom:188px; width:18px; height:7px; background-size:18px auto;}
+.all_pack .linewrap .facility .tn1_line08{left:306px; bottom:120px; width:45px; height:29px; background-size:45px auto;}
+.all_pack .linewrap .facility .tn1_line09{left:310px; bottom:157px; width:19px; height:7px; background-size:19px auto;}
+.all_pack .linewrap .facility .tn1_line10{left:380px; bottom:164px; width:108px; height:23px; background-size:108px auto;}
+/*팩라인 TN2*/
+.all_pack .linewrap .facility .tn2_01{left:33px; bottom:37px; width:148px; height:135px; background-position:28px 0; background-size:107px auto;}
+.all_pack .linewrap .facility .tn2_02{left:198px; bottom:74px; width:77px; height:55px; background-position:0 0; background-size:73px auto;}
+.all_pack .linewrap .facility .tn2_03{left:284px; bottom:101px; width:36px; height:33px; background-position:6px 1px; background-size:25px auto;}
+.all_pack .linewrap .facility .tn2_04{left:374px; bottom:120px; width:92px; height:48px; background-position:25px 1px; background-size:57px auto;}
+.all_pack .linewrap .facility .tn2_05{left:307px; bottom:139px; width:72px; height:51px; background-position:13px 0; background-size:59px auto;}
+.all_pack .linewrap .facility .tn2_06{left:397px; bottom:171px; width:8px; height:22px; background-position:0 3px; background-size:5px auto;}
+.all_pack .linewrap .facility .tn2_07{left:504px; bottom:154px; width:87px; height:39px; background-position:12px 4px; background-size:68px auto;}
+.all_pack .linewrap .facility .tn2_08{left:584px; bottom:175px; width:28px; height:35px; background-position:0 0; background-size:26px auto;}
+.all_pack .linewrap .facility .tn2_01:hover:before{background-size:148px auto;}
+.all_pack .linewrap .facility .tn2_02:hover:before{background-size:77px auto;}
+.all_pack .linewrap .facility .tn2_03:hover:before{background-size:36px auto;}
+.all_pack .linewrap .facility .tn2_04:hover:before{background-size:92px auto;}
+.all_pack .linewrap .facility .tn2_05:hover:before{background-size:72px auto;}
+.all_pack .linewrap .facility .tn2_06:hover:before{background-size:8px auto;}
+.all_pack .linewrap .facility .tn2_07:hover:before{background-size:88px auto;}
+.all_pack .linewrap .facility .tn2_08:hover:before{background-size:28px auto;}
+/*라인 gif*/
+.all_pack .linewrap .facility .tn2_line01{left:179px; bottom:85px; width:25px; height:10px; background-size:25px auto;}
+.all_pack .linewrap .facility .tn2_line02{left:275px; bottom:104px; width:16px; height:7px; background-size:16px auto;}
+.all_pack .linewrap .facility .tn2_line03_01{left:319px; bottom:115px; width:32px; height:11px; background-size:32px auto;}
+.all_pack .linewrap .facility .tn2_line03_02{left:349px; bottom:123px; width:32px; height:11px; background-size:32px auto;}
+.all_pack .linewrap .facility .tn2_line04_01{left:465px; bottom:152px; width:30px; height:8px; background-size:30px auto;}
+.all_pack .linewrap .facility .tn2_line04_02{left:484px; bottom:159px; width:25px; height:7px; background-size:25px auto;}
+.all_pack .linewrap .facility .tn2_line05{left:565px; bottom:176px; width:22px; height:8px; background-size:22px auto;}
+.all_pack .linewrap .facility .tn2_line06{left:306px; bottom:125px; width:44px; height:27px; background-size:44px auto;}
+.all_pack .linewrap .facility .tn2_line07{left:308px; bottom:160px; width:18px; height:6px; background-size:18px auto;}
+.all_pack .linewrap .facility .tn2_line08{left:376px; bottom:175px; width:23px; height:8px; background-size:23px auto;}
+.all_pack .linewrap .facility .tn2_line09{left:405px; bottom:159px; width:90px; height:30px; background-size:90px auto;}
+/*팩라인 TN3*/
+.all_pack .linewrap .facility .tn3_01{left:32px; bottom:34px; width:136px; height:125px; background-position:25px 0; background-size:98px auto;}
+.all_pack .linewrap .facility .tn3_02{left:186px; bottom:70px; width:77px; height:55px; background-position:0 0; background-size:72px auto;}
+.all_pack .linewrap .facility .tn3_03{left:270px; bottom:96px; width:37px; height:34px; background-position:6px 2px; background-size:25px auto;}
+.all_pack .linewrap .facility .tn3_04{left:353px; bottom:118px; width:73px; height:44px; background-position:0 1px; background-size:71px auto;}
+.all_pack .linewrap .facility .tn3_05{left:301px; bottom:149px; width:90px; height:47px; background-position:25px 1px; background-size:56px auto;}
+.all_pack .linewrap .facility .tn3_06{left:437px; bottom:140px; width:21px; height:29px; background-position:0 3px; background-size:21px auto;}
+.all_pack .linewrap .facility .tn3_07{left:489px; bottom:151px; width:9px; height:23px; background-position:0 3px; background-size:5px auto;}
+.all_pack .linewrap .facility .tn3_08{left:505px; bottom:156px; width:92px; height:44px; background-position:0 2px; background-size:79px auto;}
+.all_pack .linewrap .facility .tn3_09{left:586px; bottom:179px; width:28px; height:35px; background-position:0 0; background-size:26px auto;}
+.all_pack .linewrap .facility .tn3_01:hover:before{background-size:136px auto;}
+.all_pack .linewrap .facility .tn3_02:hover:before{background-size:77px auto;}
+.all_pack .linewrap .facility .tn3_03:hover:before{background-size:37px auto;}
+.all_pack .linewrap .facility .tn3_04:hover:before{background-size:73px auto;}
+.all_pack .linewrap .facility .tn3_05:hover:before{background-size:90px auto;}
+.all_pack .linewrap .facility .tn3_06:hover:before{background-size:21px auto;}
+.all_pack .linewrap .facility .tn3_07:hover:before{background-size:9px auto;}
+.all_pack .linewrap .facility .tn3_08:hover:before{background-size:92px auto;}
+.all_pack .linewrap .facility .tn3_09:hover:before{background-size:28px auto;}
+/*라인 gif*/
+.all_pack .linewrap .facility .tn3_line01{left:165px; bottom:79px; width:29px; height:10px; background-size:29px auto;}
+.all_pack .linewrap .facility .tn3_line02{left:262px; bottom:100px; width:15px; height:6px; background-size:15px auto;}
+.all_pack .linewrap .facility .tn3_line03_01{left:304px; bottom:111px; width:32px; height:11px; background-size:32px auto;}
+.all_pack .linewrap .facility .tn3_line03_02{left:332px; bottom:117px; width:39px; height:12px; background-size:39px auto;}
+.all_pack .linewrap .facility .tn3_line04{left:409px; bottom:142px; width:34px; height:10px; background-size:34px auto;}
+.all_pack .linewrap .facility .tn3_line05_01{left:460px; bottom:154px; width:22px; height:6px; background-size:22px auto;}
+.all_pack .linewrap .facility .tn3_line05_02{left:474px; bottom:160px; width:38px; height:9px; background-size:38px auto;}
+.all_pack .linewrap .facility .tn3_line06{left:508px; bottom:168px; width:36px; height:12px; background-size:36px auto;}
+.all_pack .linewrap .facility .tn3_line07{left:582px; bottom:185px; width:14px; height:5px; background-size:14px auto;}
+.all_pack .linewrap .facility .tn3_line08{left:274px; bottom:120px; width:61px; height:42px; background-size:61px auto;}
+.all_pack .linewrap .facility .tn3_line09{left:390px; bottom:160px; width:91px; height:28px; background-size:91px auto;}
+/*팩라인 TN5*/
+.all_pack .linewrap .facility .tn5_01{left:30px; bottom:31px; width:133px; height:122px; background-position:25px 0; background-size:96px auto;}
+.all_pack .linewrap .facility .tn5_02{left:181px; bottom:66px; width:76px; height:54px; background-position:0 0; background-size:71px auto;}
+.all_pack .linewrap .facility .tn5_03{left:264px; bottom:92px; width:36px; height:33px; background-position:5px 2px; background-size:25px auto;}
+.all_pack .linewrap .facility .tn5_04{left:333px; bottom:106px; width:88px; height:46px; background-position:24px 0; background-size:55px auto;}
+.all_pack .linewrap .facility .tn5_05{left:324px; bottom:140px; width:68px; height:48px; background-position:12px 0; background-size:55px auto;}
+.all_pack .linewrap .facility .tn5_06{left:406px; bottom:168px; width:8px; height:21px; background-position:0 3px; background-size:4px auto;}
+.all_pack .linewrap .facility .tn5_07{left:450px; bottom:136px; width:64px; height:38px; background-position:11px 4px; background-size:52px auto;}
+.all_pack .linewrap .facility .tn5_08{left:427px; bottom:173px; width:78px; height:43px; background-position:0 2px; background-size:77px auto;}
+.all_pack .linewrap .facility .tn5_09{left:525px; bottom:154px; width:8px; height:21px; background-position:0 3px; background-size:4px auto;}
+.all_pack .linewrap .facility .tn5_10{left:588px; bottom:172px; width:28px; height:35px; background-position:0 0; background-size:25px auto;}
+.all_pack .linewrap .facility .tn5_01:hover:before{background-size:133px auto;}
+.all_pack .linewrap .facility .tn5_02:hover:before{background-size:76px auto;}
+.all_pack .linewrap .facility .tn5_03:hover:before{background-size:36px auto;}
+.all_pack .linewrap .facility .tn5_04:hover:before{background-size:88px auto;}
+.all_pack .linewrap .facility .tn5_05:hover:before{background-size:68px auto;}
+.all_pack .linewrap .facility .tn5_06:hover:before{background-size:8px auto;}
+.all_pack .linewrap .facility .tn5_07:hover:before{background-size:64px auto;}
+.all_pack .linewrap .facility .tn5_08:hover:before{background-size:78px auto;}
+.all_pack .linewrap .facility .tn5_09:hover:before{background-size:8px auto;}
+.all_pack .linewrap .facility .tn5_10:hover:before{background-size:28px auto;}
+/*라인 gif*/
+.all_pack .linewrap .facility .tn5_line01{left:161px; bottom:75px; width:25px; height:10px; background-size:25px auto;}
+.all_pack .linewrap .facility .tn5_line02{left:256px; bottom:96px; width:15px; height:6px; background-size:15px auto;}
+.all_pack .linewrap .facility .tn5_line03_01{left:297px; bottom:106px; width:31px; height:10px; background-size:31px auto;}
+.all_pack .linewrap .facility .tn5_line03_02{left:326px; bottom:113px; width:12px; height:5px; background-size:12px auto;}
+.all_pack .linewrap .facility .tn5_line04{left:420px; bottom:136px; width:34px; height:11px; background-size:34px auto;}
+.all_pack .linewrap .facility .tn5_line05_01{left:510px; bottom:159px; width:73px; height:19px; background-size:73px auto;}
+.all_pack .linewrap .facility .tn5_line05_02{left:574px; bottom:177px; width:21px; height:5px; background-size:21px auto;}
+.all_pack .linewrap .facility .tn5_line06{left:285px; bottom:115px; width:48px; height:36px; background-size:48px auto;}
+.all_pack .linewrap .facility .tn5_line07{left:325px; bottom:159px; width:18px; height:7px; background-size:18px auto;}
+.all_pack .linewrap .facility .tn5_line08{left:391px; bottom:174px; width:41px; height:12px; background-size:41px auto;}
+.all_pack .linewrap .facility .tn5_line09{left:430px; bottom:185px; width:36px; height:11px; background-size:36px auto;}
+.all_pack .linewrap .facility .tn5_line10{left:503px; bottom:177px; width:78px; height:28px; background-size:78px auto;}
+/*팩라인 TN6*/
+.all_pack .linewrap .facility .tn6_01{left:37px; bottom:30px; width:154px; height:141px; background-position:28px 0; background-size:111px auto;}
+.all_pack .linewrap .facility .tn6_02{left:212px; bottom:71px; width:87px; height:62px; background-position:0 0; background-size:81px auto;}
+.all_pack .linewrap .facility .tn6_03{left:307px; bottom:101px; width:41px; height:37px; background-position:6px 2px; background-size:28px auto;}
+.all_pack .linewrap .facility .tn6_04{left:367px; bottom:114px; width:78px; height:55px; background-position:13px 0; background-size:64px auto;}
+.all_pack .linewrap .facility .tn6_05{left:459px; bottom:145px; width:9px; height:25px; background-position:0 3px; background-size:5px auto;}
+.all_pack .linewrap .facility .tn6_06{left:485px; bottom:148px; width:105px; height:51px; background-position:0 3px; background-size:89px auto;}
+.all_pack .linewrap .facility .tn6_07{left:577px; bottom:177px; width:32px; height:40px; background-position:0 0; background-size:29px auto;}
+.all_pack .linewrap .facility .tn6_01:hover:before{background-size:154px auto;}
+.all_pack .linewrap .facility .tn6_02:hover:before{background-size:87px auto;}
+.all_pack .linewrap .facility .tn6_03:hover:before{background-size:41px auto;}
+.all_pack .linewrap .facility .tn6_04:hover:before{background-size:78px auto;}
+.all_pack .linewrap .facility .tn6_05:hover:before{background-size:9px auto;}
+.all_pack .linewrap .facility .tn6_06:hover:before{background-size:105px auto;}
+.all_pack .linewrap .facility .tn6_07:hover:before{background-size:32px auto;}
+/*라인 gif*/
+.all_pack .linewrap .facility .tn6_line01{left:188px; bottom:81px; width:29px; height:11px; background-size:29px auto;}
+.all_pack .linewrap .facility .tn6_line02{left:297px; bottom:105px; width:18px; height:7px; background-size:18px auto;}
+.all_pack .linewrap .facility .tn6_line03{left:344px; bottom:116px; width:34px; height:10px; background-size:34px auto;}
+.all_pack .linewrap .facility .tn6_line04{left:369px; bottom:135px; width:20px; height:7px; background-size:20px auto;}
+.all_pack .linewrap .facility .tn6_line05{left:445px; bottom:152px; width:46px; height:13px; background-size:46px auto;}
+.all_pack .linewrap .facility .tn6_line06{left:488px; bottom:162px; width:40px; height:13px; background-size:40px auto;}
+.all_pack .linewrap .facility .tn6_line07{left:568px; bottom:183px; width:19px; height:7px; background-size:19px auto;}
+/*파우치라인*/
+.all_pack .linewrap .facility .pouch_01{left:38px; bottom:53px; width:37px; height:68px; background-position:right 21px; background-size:27px auto;}
+.all_pack .linewrap .facility .pouch_02{left:86px; bottom:50px; width:72px; height:65px; background-position:0 8px; background-size:72px auto;}
+.all_pack .linewrap .facility .pouch_03_01{left:146px; bottom:67px; width:164px; height:80px; background-position:0 0; background-size:164px auto;}
+.all_pack .linewrap .facility .pouch_04{left:351px; bottom:116px; width:73px; height:50px; background-position:1px 4px; background-size:67px auto;}
+.all_pack .linewrap .facility .pouch_05{left:440px; bottom:143px; width:9px; height:23px; background-position:0 4px; background-size:5px auto;}
+.all_pack .linewrap .facility .pouch_06{left:469px; bottom:150px; width:76px; height:41px; background-position:0 3px; background-size:74px auto;}
+.all_pack .linewrap .facility .pouch_07{left:549px; bottom:170px; width:59px; height:59px; background-position:0 3px; background-size:49px auto;}
+.all_pack .linewrap .facility .pouch_01:hover:before{background-size:37px auto;}
+.all_pack .linewrap .facility .pouch_02:hover:before{background-size:72px auto;}
+.all_pack .linewrap .facility .pouch_03_01:hover:before{background-size:164px auto;}
+.all_pack .linewrap .facility .pouch_04:hover:before{background-size:73px auto;}
+.all_pack .linewrap .facility .pouch_05:hover:before{background-size:9px auto;}
+.all_pack .linewrap .facility .pouch_06:hover:before{background-size:76px auto;}
+.all_pack .linewrap .facility .pouch_07:hover:before{background-size:59px auto;}
+/*라인 gif*/
+.all_pack .linewrap .facility .pouch_line01{left:136px; bottom:72px; width:54px; height:23px; background-size:54px auto;}
+.all_pack .linewrap .facility .pouch_line02{left:304px; bottom:117px; width:107px; height:37px; background-size:107px auto;}
+.all_pack .linewrap .facility .pouch_line03{left:420px; bottom:149px; width:21px; height:7px; background-size:21px auto;}
+.all_pack .linewrap .facility .pouch_line04{left:447px; bottom:155px; width:26px; height:9px; background-size:26px auto;}
+
+
+
+/*설비정보 팝업*/
+.facility_info:after, .facility_status:after{display:block; clear:both; content:'';}
+.facility_info .facility{float:left; position:relative; width:290px; text-align:center;} .facility_info .facility img{vertical-align:middle;}
+.facility_info .facility:before{display:inline-block; width:0; height:221px; vertical-align:middle; content:'';}
+.facility_info .facility:after{position:absolute; top:0; left:0; width:50px; line-height:17px; border-radius:10px; text-align:center; color:#fff;}
+.facility_info .facility.run:after{background-color:#39a45a; content:'RUN';} .facility_info .facility.stop:after{background-color:#ec2d3a; content:'STOP';} .facility_info .facility.idle:after{background-color:#f3cd35; content:'IDLE';}
+.facility_info .table{float:right; width:250px;} .facility_info td:last-child{font-size:15px; font-weight:200;}
+.facility_status{margin:30px -30px 0; padding:30px; background-color:#f4f4f6; position:relative; z-index:2;}
+.facility_status dl:first-of-type{float:left; width:420px;} .facility_status dl:last-of-type{float:right; width:130px;}
+.facility_status dt{position:relative; line-height:36px; padding-right:30px; background-color:#dadadd; text-align:center; color:#2e333f;}
+.facility_status dt .plus{position:absolute; top:6px; right:6px; width:24px; height:24px; background:#f4f4f6 url(../img/ico_common.png) -123px -123px; text-indent:-999px; overflow:hidden;}
+.facility_status dd{padding:20px; line-height:34px; background-color:#fff; text-align:center; font-size:25px; color:#e7362d;} .facility_status dd strong{font-size:35px; vertical-align:-3px;}
+.facility_status .run{position:relative; height:36px; background-color:#3cd069;} .facility_status .stop,  .facility_status .idle{position:absolute; top:0; bottom:0;}
+.facility_status .stop{background-color:#e7362d;}  .facility_status .idle{background-color:#f3cd35;}
+.facility_status .tooltip{position:absolute; top:39px; margin-left:-70px; width:195px; padding:8px 10px; background-color:#2f333f; border-radius:3px; text-align:left; font-size:10px; line-height:13px; color:#fff;}
+.facility_status .tooltip:before{position:absolute; top:-10px; left:50%; margin-left:-5px; border-style:solid; border-width:5px; border-color:transparent transparent #2f333f transparent; content:'';}
+
+/*전체라인 종합현황*/
+.line_list{padding:15px 30px; font-size:18px;text-overflow: ellipsis;}
+.line_list h2{margin-bottom:10px; font-size:1em; color:#b1b2b7; font-weight: 400;}
+.line_list dt, .line_list dd{display:flex; flex-wrap:nowrap; }
+.line_list dt{margin-bottom:10px; line-height:79px; background-color:#2c313c; border-top:1px solid #20242f; text-align:center; font-size:1.4em; color:#b1b2b7;}
+.line_list dd{margin-top:2px; line-height:100px; background-color:#272d3b; font-size:1.95em; font-weight:300;}
+.line_list dl span{padding:0 50px; box-sizing:border-box;} .line_list .alarm{color:#feb245;}
+.line_list .line, .line_list .ea, .line_list .rate{flex:1;} .line_list .product{flex:2;} .line_list span strong, .line_list dd .product{font-weight:500;}
+.line_list  dd .ea, .line_list dd .rate{padding:0 80px 0 20px;  text-align:right;} .line_list .ea strong, .line_list .rate strong{margin-right:10px; font-size:1.15em;}
+.line_list  dd:first-of-type{margin-bottom:10px;} .line_list  dd:last-of-type{margin-top:10px;} .line_list .line{padding:0 20px 0 80px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

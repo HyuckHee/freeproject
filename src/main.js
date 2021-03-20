@@ -1,7 +1,6 @@
 import  createApp  from 'vue'
 import App from '@/view/pages/default'
 
-
 import  './assets/css/font-awesome.css'
 import  './assets/css/default.css'
 import  './assets/css/icon.css'
